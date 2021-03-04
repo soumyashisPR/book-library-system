@@ -17,4 +17,4 @@ Open another termianl and start client.
 ```
 yarn client
 ```
-
+![image](https://user-images.githubusercontent.com/37874108/109960548-ecc0bb00-7d0e-11eb-9ed7-8219044974e5.png)
