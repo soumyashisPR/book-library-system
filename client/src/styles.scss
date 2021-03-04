@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  height: 0;
+
+  .app-container {
+    height: 100vh;
+    width: 100vw;
+
+    .app-header {
+      align-content: center;
+      background: black;
+      display: flex;
+      justify-content: space-around;
+
+      .logo {
+        cursor: pointer;
+        color: white;
+        align-items: center;
+        display: flex;
+      }
+
+      .search-bar {
+        width: 40%;
+        align-items: center;
+        display: flex;
+
+        input {
+          width: 100%;
+          height: 20px;
+        }
+      }
+
+      .add-book-btn {
+        align-items: center;
+        display: flex;
+
+        button {
+          background: white;
+          cursor: pointer;
+          width: 100px;
+          height: 60%;
+
+          &:hover {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
+    .app-body-wrapper {
+      display: flex;
+      justify-content: space-around;
+      height: 100%;
+      background: #08254b;
+
+      .app-body {
+        background: white;
+
+        .add-book-container {
+          .label {
+            min-width: 300px;
+          }
+        }
+
+        .landing-container {
+
+          .book-list-container {
+            display: flex;
+            margin: 4% 1% 4% 3%;
+            flex-wrap: wrap;
+
+            .book-card {
+              box-shadow: 2px 2px 8px #888888;
+              cursor: pointer;
+              width: 30%;
+              margin-right: 2%;
+              height: 150px;
+              margin-bottom: 2%;
+              position: relative;
+
+              border: solid 1px black;
+
+              &:hover {
+                .book-title {
+                  font-weight: 900;
+                }
+
+              }
+
+              .book-title {
+                text-align: center;
+                font-size: 1.5em;
+              }
+
+              .book-description {
+                padding-left: 10px;
+                margin-top: 10px;
+              }
+
+              .book-author {
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                text-align: right;
+                width: 100%;
+
+              }
+            }
+          }
+        }
+
+        .edit-book-container {
+          padding-left: 15%;
+          margin-top: 5%;
+        }
+
+        .add-book-container {
+          padding-left: 15%;
+          margin-top: 5%;
+        }
+
+        .form-input {
+          margin: 10px 0px;
+
+          button {
+            background: blue;
+            color: white;
+            width: 70px;
+            height: 30px;
+            cursor: pointer;
+
+            &:disabled {
+              background: grey;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-height: 360px) {
+  .app-header {
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 960px) {
+  .app-body {
+    width: 100%;
+    min-height: 100px;
+
+  }
+}
+
+@media (min-width: 960px) {
+  .app-body {
+    width: 900px;
+    min-height: 100px;
+  }
+}
+
+@media (min-width: 480px) and (min-height: 360px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 480px) and (min-height: 720px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 480px) and (min-height: 1080px) {
+  .app-header {
+    height: 200px;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 360px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 720px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 960px) and (min-height: 1080px) {
+  .app-header {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1440px) and (min-height: 360px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1440px) and (min-height: 720px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1440px) and (min-height: 1080px) {
+  .app-header {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 360px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 720px) {
+  .app-header {
+    height: 60px;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .app-header {
+    height: 200px;
+  }
+}
